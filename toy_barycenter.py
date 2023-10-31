@@ -183,7 +183,7 @@ def main(verbose=False):
 
             # Visualizing the last registration of the inner loop
             if verbose:
-                visualize_registration(I_i, I_0_phi_i, I_b)
+                visualize_registration(I_i, I_b, I_0_phi_i)
 
             # Quantifying folds in last registered grid
             zero = torch.tensor(0, device=device, dtype=dtype)
